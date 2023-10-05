@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: New Items Config
+  m_EditorClassIdentifier: Assembly-CSharp::ItemsConfig
+  Items:
+  - Title: Stapler_red
+    Prefab: {fileID: 1102889181992154, guid: 4f79713dbf78d4b868f908ddef942c1a, type: 3}
+    Price: 200
+  - Title: Calculator
+    Prefab: {fileID: 1463368340771084, guid: 4bc48771517f84804bfe1e21d8bbdbe5, type: 3}
+    Price: 300
+  - Title: Pen_black
+    Prefab: {fileID: 1317491652976642, guid: b2ba957224087475eb7804e492ea272e, type: 3}
+    Price: 50
+  - Title: Tape_dispencer
+    Prefab: {fileID: 1690718150433878, guid: 99d4c8645da7e43e8ac08906d7ec2948, type: 3}
+    Price: 400
+  - Title: Scissors_black
+    Prefab: {fileID: 1491125800525128, guid: 07f9048ddafe046b893ea5846d9de1f4, type: 3}
+    Price: 250
