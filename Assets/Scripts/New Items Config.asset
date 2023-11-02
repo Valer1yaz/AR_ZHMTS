@@ -9,22 +9,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 4508a49768e743943b4186123b8e0a78, type: 3}
   m_Name: New Items Config
-  m_EditorClassIdentifier: Assembly-CSharp::ItemsConfig
+  m_EditorClassIdentifier: 
   Items:
-  - Title: Stapler_red
-    Prefab: {fileID: 5407122682405942561, guid: c8d6d4d5acfa97942802a73eccd130e3, type: 3}
+  - Title: scotch
+    Prefab: {fileID: 8226937526697205554, guid: 323f296cf32363548b15f8896faae604, type: 3}
     Price: 200
-  - Title: Calculator
-    Prefab: {fileID: 1463368340771084, guid: 4bc48771517f84804bfe1e21d8bbdbe5, type: 3}
+  - Title: stepler
+    Prefab: {fileID: 5407122682405942561, guid: c8d6d4d5acfa97942802a73eccd130e3, type: 3}
+    Price: 250
+  - Title: scissors
+    Prefab: {fileID: 1138140842228218133, guid: f5e25e2fe8878724ba6645f2e7ff3879, type: 3}
     Price: 300
-  - Title: Pen_black
+  - Title: pen
     Prefab: {fileID: 5413872059889668720, guid: fc09c7d67222f514c987534085716393, type: 3}
     Price: 50
-  - Title: Tape_dispencer
-    Prefab: {fileID: 8226937526697205554, guid: 323f296cf32363548b15f8896faae604, type: 3}
+  - Title: calc
+    Prefab: {fileID: 2622967896812217755, guid: 28f322d03ef532e42ac4fb1435f42988, type: 3}
     Price: 400
-  - Title: Scissors_black
-    Prefab: {fileID: 1138140842228218133, guid: f5e25e2fe8878724ba6645f2e7ff3879, type: 3}
-    Price: 250

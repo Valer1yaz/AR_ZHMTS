@@ -1,7 +1,9 @@
+﻿using System;
 using UnityEngine;
-using System;
 using TMPro;
 using Microsoft.MixedReality.Toolkit.UI;
+
+
 
 public class ARButton : MonoBehaviour
 {
@@ -23,5 +25,11 @@ public class ARButton : MonoBehaviour
     private void ProcessClick()
     {
         OnButtonClicked?.Invoke();
+        SpawnItem();
+    }
+
+    public void SpawnItem()
+    {
+        Instantiate(_prefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 }
