@@ -9,11 +9,14 @@ public class ARButton : MonoBehaviour
 {
     public event Action OnButtonClicked;
 
+    [Header("Unity Setup")]
+
     [SerializeField] private TextMeshPro _title;
     [SerializeField] private Interactable _interactable;
+    public GameObject _fx;
 
     private GameObject _prefab;
-
+    
     public void Initialize(Item config)
     {
         _title.text = config.Title;
@@ -30,6 +33,8 @@ public class ARButton : MonoBehaviour
 
     public void SpawnItem()
     {
-        Instantiate(_prefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(_fx, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
+        Instantiate(_prefab, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
+        Destroy(_fx);
     }
 }

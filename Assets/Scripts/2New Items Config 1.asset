@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4508a49768e743943b4186123b8e0a78, type: 3}
+  m_Name: 2New Items Config 1
+  m_EditorClassIdentifier: 
+  Items:
+  - Title: Flashlight
+    Prefab: {fileID: 9089252202971933626, guid: e43a62af6cefc9649bab35167a5acec9, type: 3}
+    Price: 100
+  - Title: Gold flashlight
+    Prefab: {fileID: 7450782998262309708, guid: a89f9f7a3208ab7438b4aecb953ef894, type: 3}
+    Price: 500
+  - Title: WOWWWWW
+    Prefab: {fileID: 7450782998262309708, guid: a89f9f7a3208ab7438b4aecb953ef894, type: 3}
+    Price: -500
