@@ -163,8 +163,8 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 0}
-  elasticsManager: {fileID: 0}
+  constraintsManager: {fileID: 8227502184818508696, guid: 323f296cf32363548b15f8896faae604, type: 3}
+  elasticsManager: {fileID: 8496749417278980149, guid: 323f296cf32363548b15f8896faae604, type: 3}
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -199,9 +199,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413872059889668720}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.41021234, y: 0.058198966, z: 0.043267537}
   m_Center: {x: -0.03508012, y: -0.00024705008, z: -0.0021025725}
 --- !u!1 &5414346349500859512

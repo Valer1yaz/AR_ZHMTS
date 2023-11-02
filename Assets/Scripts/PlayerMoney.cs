@@ -8,7 +8,7 @@ public class PlayerMoney : MonoBehaviour
 
     public void ProcessBuy(int money)
     {
-        if (_moneyAmount - money < 0)
+        if (_moneyAmount - money < 1)
         {
             return;
         }
@@ -16,7 +16,7 @@ public class PlayerMoney : MonoBehaviour
     }
     public bool CanBuy(int price)
     {
-        return _moneyAmount - price >= 0;
+        return _moneyAmount - price >= 1;
         
     }
 }

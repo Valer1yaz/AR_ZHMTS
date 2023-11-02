@@ -2,42 +2,32 @@ using System;
 using UnityEngine;
 using TMPro;
 using Microsoft.MixedReality.Toolkit.UI;
-
-
+using Unity.VisualScripting;
 
 public class MagicButton : MonoBehaviour
 {
     public event Action OnButtonClicked;
 
-    [Header("Unity Setup")]
+    public GameObject Cube;
+    public Material first;
+    public Material second;
+    public Material third;
 
-    [SerializeField] private TextMeshPro _title;
-    [SerializeField] private Interactable _interactable;
-    public GameObject _fx;
-
-
-
-    private GameObject _prefab;
-
-    public void Initialize(Item config)
+    public void Update()
     {
-        _title.text = config.Title;
-        _prefab = config.Prefab;
+        if (Cube.GetComponent<Renderer>().material = first) 
+        {
+            Cube.GetComponent<Renderer>().material = second;
+        }
+        else if (Cube.GetComponent<Renderer>().material = second)
+        {
+            Cube.GetComponent<Renderer>().material = third;
+        }
+        else
+        {
+            Cube.GetComponent<Renderer>().material = first;
+        }
 
-        _interactable.OnClick.AddListener(ProcessClick);
     }
-
-    private void ProcessClick()
-    {
-        OnButtonClicked?.Invoke();
-        SpawnItem();
-    }
-
-    public void SpawnItem()
-    {
-        Instantiate(_fx, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
-        Instantiate(_prefab, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
-        Destroy(_fx);
-    }
-
+   
 }

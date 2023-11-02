@@ -16,7 +16,7 @@ public class ARMenu : MonoBehaviour
 
     private void UpdateButtons()
     {
-        for (int i = 0; i < _root.childCount; i++) 
+        for (int i = 1; i < _root.childCount; i++) 
         {
             Destroy(_root.GetChild(i).gameObject);
         }
