@@ -22,3 +22,6 @@ MonoBehaviour:
   - Title: "\u041D\u043E\u0436\u043D\u0438\u0446\u044B"
     Prefab: {fileID: 1138140842228218133, guid: f5e25e2fe8878724ba6645f2e7ff3879, type: 3}
     Price: 300
+  - Title: "\u0412\u0437\u0440\u044B\u0432"
+    Prefab: {fileID: 8424475085164722043, guid: 9dbb44eee53acec419c9989d3a4caa9e, type: 3}
+    Price: 0

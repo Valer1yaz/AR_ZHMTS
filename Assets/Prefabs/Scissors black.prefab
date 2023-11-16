@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 1138901885815531147}
   - component: {fileID: 1138901885815531146}
   - component: {fileID: 2794213381857082555}
+  - component: {fileID: 3864716091999284680}
   m_Layer: 0
   m_Name: Scissors black
   m_TagString: scissors
@@ -225,8 +226,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e1115985cc8eb42834a45c9d536eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 5407122682405942561, guid: c8d6d4d5acfa97942802a73eccd130e3, type: 3}
+  obj: {fileID: 1138140842228218133}
+  enemy: {fileID: 5407122682405942561, guid: c8d6d4d5acfa97942802a73eccd130e3, type: 3}
   _fx: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+--- !u!65 &3864716091999284680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138140842228218133}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3079102, y: 0.030661108, z: 0.14017975}
+  m_Center: {x: -0.012646474, y: 0.0034803925, z: 0.0012422204}
 --- !u!1 &1138822954703938565
 GameObject:
   m_ObjectHideFlags: 0
