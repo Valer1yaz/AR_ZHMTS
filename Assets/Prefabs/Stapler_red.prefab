@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 5407167820807545330}
   - component: {fileID: 5407167820807545331}
   - component: {fileID: 5407167820807545340}
+  - component: {fileID: 4970053849604792045}
   m_Layer: 0
   m_Name: Stapler_red
-  m_TagString: Untagged
+  m_TagString: stapler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,13 +30,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5407122682405942561}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.20116177, y: -0.009837486, z: 1.212421}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5439543357803540375
 MeshFilter:
@@ -130,7 +131,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 8227502184818508696, guid: 323f296cf32363548b15f8896faae604, type: 3}
+  constraintsManager: {fileID: 5407167820807545329}
   elasticsManager: {fileID: 8496749417278980149, guid: 323f296cf32363548b15f8896faae604, type: 3}
   onManipulationStarted:
     m_PersistentCalls:
@@ -179,3 +180,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.27461824, y: 0.090204075, z: 0.058493804}
   m_Center: {x: 0.00030866265, y: 0.045402877, z: 0}
+--- !u!114 &4970053849604792045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5407122682405942561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e1115985cc8eb42834a45c9d536eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 8226937526697205554, guid: 323f296cf32363548b15f8896faae604, type: 3}
+  _fx: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}

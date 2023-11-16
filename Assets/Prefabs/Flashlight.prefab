@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2506992778380465171}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.3618273, y: 0.60752034, z: 0.60752034, w: 0.36182743}
   m_LocalPosition: {x: 0.0036929445, y: 0.09289999, z: -0.0020005368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8765844169980805774}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &977411332864187977
 Light:
@@ -124,6 +124,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9089252202971933626}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.70710677, y: 0, z: 0, w: 0.70710677}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -131,7 +132,6 @@ Transform:
   m_Children:
   - {fileID: 2415654212020678111}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 90}
 --- !u!33 &1976166392092334239
 MeshFilter:
@@ -250,7 +250,7 @@ MonoBehaviour:
   rotateLerpTime: 0.001
   scaleLerpTime: 0.001
   enableConstraints: 1
-  constraintsManager: {fileID: 8227502184818508696, guid: 323f296cf32363548b15f8896faae604, type: 3}
+  constraintsManager: {fileID: 6186584252222695374}
   elasticsManager: {fileID: 8496749417278980149, guid: 323f296cf32363548b15f8896faae604, type: 3}
   onManipulationStarted:
     m_PersistentCalls:
