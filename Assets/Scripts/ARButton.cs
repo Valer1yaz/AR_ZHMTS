@@ -35,6 +35,5 @@ public class ARButton : MonoBehaviour
     {
         Instantiate(_fx, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
         Instantiate(_prefab, transform.position - new Vector3(0.3f, 0.3f), Quaternion.identity);
-        Destroy(_fx);
     }
 }

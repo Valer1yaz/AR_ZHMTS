@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 8227502184818508646}
   - component: {fileID: 8496749417278980149}
   - component: {fileID: -986402252098238274}
-  - component: {fileID: -1681488903067849208}
+  - component: {fileID: 1657880810335662666}
   m_Layer: 0
   m_Name: Tape dispenser
   m_TagString: tape
@@ -347,9 +347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 8226937526697205554}
-  enemy: {fileID: 1138140842228218133, guid: f5e25e2fe8878724ba6645f2e7ff3879, type: 3}
   _fx: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
---- !u!65 &-1681488903067849208
+--- !u!65 &1657880810335662666
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,5 +367,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2951748, y: 0.12374014, z: 0.089705765}
-  m_Center: {x: -0.02450858, y: 0.058964476, z: -0.0039303005}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
