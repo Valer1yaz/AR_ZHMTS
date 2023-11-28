@@ -8,6 +8,10 @@ TagManager:
   - tape
   - scissors
   - stapler
+  - lb_groundTarget
+  - lb_perchTarget
+  - lb_bird
+  - Book
   layers:
   - Default
   - TransparentFX

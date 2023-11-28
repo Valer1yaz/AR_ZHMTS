@@ -1,30 +1,37 @@
 using UnityEngine;
+using System.Collections;
 
 public class Game : MonoBehaviour
 {
-    public GameObject obj;
     public GameObject _fx;
+    public GameObject _fx2;
+    private Animator m_animator;
 
-    private void OnTriggerEnter(Collider collider)
+    void Start()
     {
-        if (collider.gameObject.tag == "scissors" && obj.tag == "tape")
+
+        m_animator = GetComponent<Animator>();
+
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "lb_perchTarget")
         {
-            Instantiate(_fx, obj.transform.position, Quaternion.identity);
+            Debug.Log("dead");
+            m_animator.SetTrigger("Dead");
+
+            Instantiate(_fx, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject); // Уничтожаем объект, к которому прикреплен скрипт
-        }
-        else if (collider.gameObject.tag == "tape" && obj.tag == "stapler")
-        {
-            Instantiate(_fx, obj.transform.position, Quaternion.identity);
-            Destroy(this.gameObject); // Уничтожаем объект, к которому прикреплен скрипт
-        }
-        else if (collider.gameObject.tag == "stapler" && obj.tag == "scissors")
-        {
-            Instantiate(_fx, obj.transform.position, Quaternion.identity);
-            Destroy(this.gameObject); // Уничтожаем объект, к которому прикреплен скрипт
+            
         }
         else
         {
-            Instantiate(_fx, obj.transform.position, Quaternion.identity);
+            Debug.Log("not dead");
+            Instantiate(_fx2, this.transform.position, Quaternion.identity);
+            m_animator.SetTrigger("Run");
+
+            Destroy(this.gameObject, 5);
+            
         }
     }
 }

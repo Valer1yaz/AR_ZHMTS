@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: New Items Config
   m_EditorClassIdentifier: 
   Items:
-  - Title: "\u0421\u043A\u043E\u0442\u0447"
-    Prefab: {fileID: 8226937526697205554, guid: 323f296cf32363548b15f8896faae604, type: 3}
+  - Title: "\u0421\u0438\u043D\u0438\u0439 \u0414\u0436\u0435\u0439"
+    Prefab: {fileID: 5483780969265489319, guid: 4a7c2d4c6830b7c41bc57c87240cb59f, type: 3}
     Price: 200
-  - Title: "\u0421\u0442\u0435\u043F\u043B\u0435\u0440"
-    Prefab: {fileID: 5407122682405942561, guid: c8d6d4d5acfa97942802a73eccd130e3, type: 3}
+  - Title: "\u041A\u0430\u0440\u0434\u0438\u043D\u0430\u043B"
+    Prefab: {fileID: 5136261930571147088, guid: 732c3cfdc47c0524db5a09d4c766ae57, type: 3}
     Price: 250
-  - Title: "\u041D\u043E\u0436\u043D\u0438\u0446\u044B"
-    Prefab: {fileID: 1138140842228218133, guid: f5e25e2fe8878724ba6645f2e7ff3879, type: 3}
+  - Title: "\u0427\u0438\u043A\u0430\u0434\u0438"
+    Prefab: {fileID: 2641699447443718993, guid: fcca72cf2fd214444b7dcb340956fb9d, type: 3}
     Price: 300
-  - Title: "\u0412\u0437\u0440\u044B\u0432"
-    Prefab: {fileID: 8424475085164722043, guid: 9dbb44eee53acec419c9989d3a4caa9e, type: 3}
+  - Title: "\u0417\u043E\u043B\u043E\u0442\u043E\u0439 \u0424\u0438\u043D\u0447"
+    Prefab: {fileID: 6441355957463895115, guid: 0490d33cd4aaac841a62a45c8a3a9567, type: 3}
+    Price: 0
+  - Title: "\u0420\u043E\u0431\u0438\u043D"
+    Prefab: {fileID: 6866309024595154228, guid: ebddc34167d7f4543971a947436fa440, type: 3}
     Price: 0

@@ -19,7 +19,13 @@ public class ARButton : MonoBehaviour
     
     public void Initialize(Item config)
     {
+        if (config.Price > 0) { 
+        _title.text = config.Title + " : " + config.Price;
+        }
+        else
+        {
         _title.text = config.Title;
+        }
         _prefab = config.Prefab;
 
         _interactable.OnClick.AddListener(ProcessClick);

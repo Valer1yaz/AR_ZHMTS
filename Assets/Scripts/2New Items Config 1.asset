@@ -13,12 +13,30 @@ MonoBehaviour:
   m_Name: 2New Items Config 1
   m_EditorClassIdentifier: 
   Items:
+  - Title: "\u041A\u0440\u043E\u043B\u0438\u043A"
+    Prefab: {fileID: 4588585591629431096, guid: 365a48e14e3af6c4a96004a07caa59b0, type: 3}
+    Price: 10
   - Title: "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0434\u0435\u043D\u0435\u0433"
     Prefab: {fileID: 8424475085164722043, guid: 9dbb44eee53acec419c9989d3a4caa9e, type: 3}
     Price: -500
-  - Title: "\u0424\u043E\u043D\u0430\u0440\u0438\u043A"
-    Prefab: {fileID: 9089252202971933626, guid: e43a62af6cefc9649bab35167a5acec9, type: 3}
+  - Title: "\u041F\u0435\u0440\u0432\u0430\u044F \u043A\u043D\u0438\u0433\u0430"
+    Prefab: {fileID: 2839140397100593347, guid: d8bb9b8ccf650f744872bbe9650e0caa, type: 3}
     Price: 100
-  - Title: "\u0417\u043E\u043B\u043E\u0442\u043E\u0439 \u0444\u043E\u043D\u0430\u0440\u0438\u043A"
-    Prefab: {fileID: 7450782998262309708, guid: a89f9f7a3208ab7438b4aecb953ef894, type: 3}
+  - Title: "\u0412\u0442\u043E\u0440\u0430\u044F \u043A\u043D\u0438\u0433\u0430"
+    Prefab: {fileID: 2010344586805062307, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
+    Price: 200
+  - Title: "\u0422\u0440\u0435\u0442\u044C\u044F \u043A\u043D\u0438\u0433\u0430"
+    Prefab: {fileID: 6132653275517244605, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
+    Price: 300
+  - Title: "\u0427\u0435\u0442\u0432\u0451\u0440\u0442\u0430\u044F \u043A\u043D\u0438\u0433\u0430"
+    Prefab: {fileID: 844273819615992762, guid: 7350a09c5e61ceb4299aa016bec6e30d, type: 3}
+    Price: 400
+  - Title: "\u041F\u044F\u0442\u0430\u044F \u043A\u043D\u0438\u0433\u0430"
+    Prefab: {fileID: 3660879978780493154, guid: e57ebbe7869b92940bcbceb9c7205ff4, type: 3}
     Price: 500
+  - Title: "\u0428\u0435\u0441\u0442\u0430\u044F \u043A\u043D\u0438\u0433\u0430"
+    Prefab: {fileID: 1519404165062172863, guid: 335e212dcb509cc46a3e426a4c49b085, type: 3}
+    Price: 600
+  - Title: "\u0421\u0435\u0434\u044C\u043C\u0430\u044F \u043A\u043D\u0438\u0433\u0430"
+    Prefab: {fileID: 4002366137796407305, guid: 78cbf6ab7c05dd44a9085af9d1d0a57b, type: 3}
+    Price: 700

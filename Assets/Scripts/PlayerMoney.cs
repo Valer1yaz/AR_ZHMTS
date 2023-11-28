@@ -19,4 +19,9 @@ public class PlayerMoney : MonoBehaviour
         return _moneyAmount - price >= 1;
         
     }
+
+    public int ReturnAmount()
+    {
+        return _moneyAmount;
+    }
 }
