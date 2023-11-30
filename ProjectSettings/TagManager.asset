@@ -5,13 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - FxTemporaire
-  - tape
-  - scissors
-  - stapler
   - lb_groundTarget
   - lb_perchTarget
   - lb_bird
   - Book
+  - Floor
+  - Rabbit
+  - Butterfly
   layers:
   - Default
   - TransparentFX
@@ -19,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Floor
   - 
   - 
   - 

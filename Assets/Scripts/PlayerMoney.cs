@@ -19,6 +19,10 @@ public class PlayerMoney : MonoBehaviour
         return _moneyAmount - price >= 1;
         
     }
+    public void ProcessAdd(int money)
+    {
+        _moneyAmount += money;
+    }
 
     public int ReturnAmount()
     {

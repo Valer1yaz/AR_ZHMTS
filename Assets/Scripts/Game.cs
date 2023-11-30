@@ -5,20 +5,23 @@ public class Game : MonoBehaviour
 {
     public GameObject _fx;
     public GameObject _fx2;
-    private Animator m_animator;
+    private Animator anim;
+    private int dieanim;
+    private int runanim;
+    private int idleanim;
 
     void Start()
     {
-
-        m_animator = GetComponent<Animator>();
-
+        anim = GetComponent<Animator>();
+        dieanim = Animator.StringToHash("Dead");
+        runanim = Animator.StringToHash("Run");
+        idleanim = Animator.StringToHash("Idle");
     }
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "lb_perchTarget")
+        if (other.tag == "Book")
         {
-            Debug.Log("dead");
-            m_animator.SetTrigger("Dead");
+            anim.SetTrigger(dieanim);
 
             Instantiate(_fx, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject); // Уничтожаем объект, к которому прикреплен скрипт
@@ -26,12 +29,8 @@ public class Game : MonoBehaviour
         }
         else
         {
-            Debug.Log("not dead");
             Instantiate(_fx2, this.transform.position, Quaternion.identity);
-            m_animator.SetTrigger("Run");
-
-            Destroy(this.gameObject, 5);
-            
+            anim.SetTrigger(runanim);
         }
     }
 }

@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 3242645753556435575}
   m_Layer: 0
   m_Name: Butterfly
-  m_TagString: Untagged
+  m_TagString: Butterfly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

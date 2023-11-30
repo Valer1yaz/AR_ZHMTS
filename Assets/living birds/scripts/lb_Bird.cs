@@ -429,7 +429,12 @@ public class lb_Bird : MonoBehaviour {
 		if (col.tag == "lb_bird"){
 			FlyAway ();
 		}
-	}
+        if (col.tag == "Book")
+        {
+            Debug.Log("dead");
+			KillBird();
+        }
+    }
 
 	void OnTriggerExit(Collider col){
 		//if bird has hopped out of the target area lets fly
@@ -475,7 +480,8 @@ public class lb_Bird : MonoBehaviour {
 		}
 	}
 
-	public void KillBird(){
+    [SerializeField] public PlayerMoney _playerMoney;
+    public void KillBird(){
 		if(!dead){
 			controller.SendMessage ("FeatherEmit",transform.position);
 			anim.SetTrigger(dieTriggerHash);
@@ -493,6 +499,8 @@ public class lb_Bird : MonoBehaviour {
 			birdCollider.size = new Vector3(0.1f,0.01f,0.1f)*controller.birdScale;
 			GetComponent<Rigidbody>().isKinematic = false;
 			GetComponent<Rigidbody>().useGravity = true;
+			_playerMoney.ProcessAdd(100);
+
 		}
 	}
 
@@ -566,4 +574,5 @@ public class lb_Bird : MonoBehaviour {
 			OnGroundBehaviors();	
 		}
 	}
+
 }
