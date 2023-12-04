@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4508a49768e743943b4186123b8e0a78, type: 3}
+  m_Name: Books
+  m_EditorClassIdentifier: 
+  Items:
+  - Title: "\u041A\u043D\u0438\u0433\u0430 \u043E\u0447\u0438\u0449\u0435\u043D\u0438\u044F"
+    Prefab: {fileID: 6132653275517244605, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
+    Price: 50
+  - Title: "\u041A\u043D\u0438\u0433\u0430 \u0441\u0432\u0435\u0442\u0430"
+    Prefab: {fileID: 2839140397100593347, guid: d8bb9b8ccf650f744872bbe9650e0caa, type: 3}
+    Price: 100
