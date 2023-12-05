@@ -480,7 +480,8 @@ public class lb_Bird : MonoBehaviour {
 		}
 	}
 
-    [SerializeField] public PlayerMoney _playerMoney;
+    [SerializeField] private PlayerMoney _playerMoney;
+    [SerializeField] private ARMenu _update;
     public void KillBird(){
 		if(!dead){
 			controller.SendMessage ("FeatherEmit",transform.position);
@@ -499,10 +500,12 @@ public class lb_Bird : MonoBehaviour {
 			birdCollider.size = new Vector3(0.1f,0.01f,0.1f)*controller.birdScale;
 			GetComponent<Rigidbody>().isKinematic = false;
 			GetComponent<Rigidbody>().useGravity = true;
-			_playerMoney.ProcessAdd(100);
-
+			_playerMoney.ProcessBuy(-50);
+			_playerMoney.DeadBirdCount();
+			_update.UpdateButtons();
+			Revive();
 		}
-	}
+    }
 
 	public void KillBirdWithForce(Vector3 force){
 		if(!dead){
@@ -523,7 +526,11 @@ public class lb_Bird : MonoBehaviour {
 			GetComponent<Rigidbody>().isKinematic = false;
 			GetComponent<Rigidbody>().useGravity = true;
 			GetComponent<Rigidbody>().AddForce (force);
-		}
+            _playerMoney.ProcessBuy(-50);
+            _playerMoney.DeadBirdCount();
+            _update.UpdateButtons();
+            Revive();
+        }
 	}
 
 	void Revive(){

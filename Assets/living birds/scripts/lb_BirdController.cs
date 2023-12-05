@@ -21,7 +21,7 @@ public class lb_BirdController : MonoBehaviour {
 	public bool crow = true;
 
 	bool pause = false;
-	GameObject[] myBirds;
+	[SerializeField] public GameObject[] myBirds;
 	List<string> myBirdTypes = new List<string>();
 	List<GameObject>  birdGroundTargets = new List<GameObject>();
 	List<GameObject> birdPerchTargets = new List<GameObject>();

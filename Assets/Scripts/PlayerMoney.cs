@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMoney : MonoBehaviour
 {
     [SerializeField] private int _moneyAmount;
+    [SerializeField] private int _deadbirdcount;
 
     public void ProcessBuy(int money)
     {
@@ -19,13 +21,17 @@ public class PlayerMoney : MonoBehaviour
         return _moneyAmount - price >= 1;
         
     }
-    public void ProcessAdd(int money)
+    public void DeadBirdCount()
     {
-        _moneyAmount += money;
+        _deadbirdcount ++;
     }
 
-    public int ReturnAmount()
+    public int ReturnMoneyAmount()
     {
         return _moneyAmount;
+    }
+    public int ReturnBirdAmount()
+    {
+        return _deadbirdcount;
     }
 }
