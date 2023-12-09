@@ -16,10 +16,13 @@ public class PlayerMoney : MonoBehaviour
         }
         _moneyAmount -= money;
     }
-    public bool CanBuy(int price)
+    public bool CanBuy(int money)
     {
-        return _moneyAmount - price >= 1;
-        
+        if (_moneyAmount - money >= 0)
+        {
+            return true;
+        }
+        else { return false; }
     }
     public void DeadBirdCount()
     {
@@ -30,6 +33,7 @@ public class PlayerMoney : MonoBehaviour
     {
         return _moneyAmount;
     }
+
     public int ReturnBirdAmount()
     {
         return _deadbirdcount;

@@ -29,7 +29,7 @@ public class lb_Bird : MonoBehaviour {
 	bool landing = false;
 	bool perched = false;
 	bool onGround = true;
-	bool dead = false;
+	public bool dead = false;
 	BoxCollider birdCollider;
 	Vector3 bColCenter;
 	Vector3 bColSize;
@@ -137,7 +137,7 @@ public class lb_Bird : MonoBehaviour {
 		anim.SetBool(landingBoolHash, false);
 
 		//Wait to apply velocity until the bird is entering the flying animation
-		while(anim.GetCurrentAnimatorStateInfo(0).nameHash != flyAnimationHash){
+		while(anim.GetCurrentAnimatorStateInfo(0).fullPathHash != flyAnimationHash){
 			yield return 0;
 		}
 
@@ -356,7 +356,7 @@ public class lb_Bird : MonoBehaviour {
 	}
 	
 	void OnGroundBehaviors(){
-		idle = anim.GetCurrentAnimatorStateInfo(0).nameHash == idleAnimationHash;
+		idle = anim.GetCurrentAnimatorStateInfo(0).fullPathHash == idleAnimationHash;
 		if(!GetComponent<Rigidbody>().isKinematic){
 			GetComponent<Rigidbody>().isKinematic = true;
 		}
@@ -480,8 +480,7 @@ public class lb_Bird : MonoBehaviour {
 		}
 	}
 
-    [SerializeField] private PlayerMoney _playerMoney;
-    [SerializeField] private ARMenu _update;
+
     public void KillBird(){
 		if(!dead){
 			controller.SendMessage ("FeatherEmit",transform.position);
@@ -500,10 +499,6 @@ public class lb_Bird : MonoBehaviour {
 			birdCollider.size = new Vector3(0.1f,0.01f,0.1f)*controller.birdScale;
 			GetComponent<Rigidbody>().isKinematic = false;
 			GetComponent<Rigidbody>().useGravity = true;
-			_playerMoney.ProcessBuy(-50);
-			_playerMoney.DeadBirdCount();
-			_update.UpdateButtons();
-			Revive();
 		}
     }
 
@@ -526,10 +521,6 @@ public class lb_Bird : MonoBehaviour {
 			GetComponent<Rigidbody>().isKinematic = false;
 			GetComponent<Rigidbody>().useGravity = true;
 			GetComponent<Rigidbody>().AddForce (force);
-            _playerMoney.ProcessBuy(-50);
-            _playerMoney.DeadBirdCount();
-            _update.UpdateButtons();
-            Revive();
         }
 	}
 

@@ -1,8 +1,17 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 public class MenuController : MonoBehaviour
 {
-    // Вызывается при нажатии на кнопку "Пауза"
+    [SerializeField] private PlayerMoney _playerMoney;
+    [SerializeField] private TextMeshPro _titleMoney;
+    [SerializeField] private TextMeshPro _titleBird;
+    private void Update()
+    {
+        _titleMoney.text = "Мана:" + Convert.ToString(_playerMoney.ReturnMoneyAmount());
+        _titleBird.text = "Очки:" + Convert.ToString(_playerMoney.ReturnBirdAmount());
+    }
     public void OnPauseButtonClicked()
     {
         // Ставим игру на паузу
@@ -12,7 +21,7 @@ public class MenuController : MonoBehaviour
     public void OnResumeButtonClicked()
     {
         // Снимаем с паузы
-        Time.timeScale = 1;
+        Time.timeScale = 0;
     }
 
     // Вызывается при нажатии на кнопку "Выход"
