@@ -384,10 +384,11 @@ Transform:
   m_GameObject: {fileID: 115661817}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1594117987}
   m_Father: {fileID: 1940272272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &115661819
@@ -537,6 +538,11 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
+--- !u!4 &116354850 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+  m_PrefabInstance: {fileID: 8841048433466303759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &131936703
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +927,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2665847548112878872}
+      - m_Target: {fileID: 1471202840}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OnPauseButtonClicked
         m_Mode: 1
@@ -1552,15 +1558,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7274194177014044423, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7274194177014044423, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7274194177014044423, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7274194177014044423, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1617,9 +1623,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6132653275517244605, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
       insertIndex: -1
       addedObject: {fileID: 595788031}
-    - targetCorrespondingSourceObject: {fileID: 6132653275517244605, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 595788030}
   m_SourcePrefab: {fileID: 100100000, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
 --- !u!4 &242633363 stripped
 Transform:
@@ -2347,129 +2350,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &364362940
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 364362943}
-  - component: {fileID: 364362942}
-  - component: {fileID: 364362941}
-  - component: {fileID: 364362944}
-  - component: {fileID: 364362945}
-  m_Layer: 6
-  m_Name: BirdPlane2
-  m_TagString: lb_perchTarget
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!64 &364362941
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364362940}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &364362942
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364362940}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &364362943
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364362940}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 0.1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 609884320}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &364362944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364362940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35acec13e92dc0846a893a2496fea9f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idealNumberOfBirds: 15
-  maximumNumberOfBirds: 40
-  currentCamera: {fileID: 115661824}
-  unspawnDistance: 2
-  highQuality: 1
-  collideWithObjects: 1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 2147483648
-  birdScale: 1
-  robin: 1
-  blueJay: 1
-  cardinal: 1
-  chickadee: 1
-  sparrow: 1
-  goldFinch: 1
-  crow: 1
-  myBirds:
-  - {fileID: 5968788951065489007, guid: 91f6942ff21d00b4a9a2804f52dc277a, type: 3}
-  - {fileID: 6217397724982664758, guid: 250296e8fa7dcec49a727e440f1e2ff7, type: 3}
-  - {fileID: 7849517051786159967, guid: ef521a311248a834fb5d2c3b705ee7d3, type: 3}
-  - {fileID: 1302076472120895961, guid: a3293c4caa002574f839f364cdf6e8d2, type: 3}
-  - {fileID: 7698925483218074656, guid: 17f2f4bb4f7a7944f80030807cff7159, type: 3}
-  - {fileID: 8940615369925202536, guid: ccef1bb5ec387e94eaf075b1f7a09d16, type: 3}
-  - {fileID: 7033908012375413461, guid: 30fd1e203b4fe4041802cd811413ffcd, type: 3}
---- !u!65 &364362945
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364362940}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &373206359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,7 +3382,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041A\u043D\u0438\u0433\u0430 \u0441\u0432\u0435\u0442\u0430"
+  m_text: "\u041A\u043D\u0438\u0433\u0430 \u043F\u043E\u043A\u043E\u044F\u043D\u0438\u044F"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
   m_sharedMaterial: {fileID: 21202819797275496, guid: 6a84f857bec7e7345843ae29404c57ce, type: 2}
@@ -3973,20 +3853,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6132653275517244605, guid: fd51d20d8a2a4e6459dd4a9c9988d536, type: 3}
   m_PrefabInstance: {fileID: 242633362}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &595788030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595788022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9e2d8a64fddee458fc9584b6daa6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerMoney: {fileID: 1940272273}
-  _points: 80
 --- !u!114 &595788031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3999,9 +3865,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c78ad3c4d72044db90c528a728e1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1940272271}
   _playerMoney: {fileID: 1940272273}
-  _price: 50
+  _fx: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5, type: 3}
+  _player: {fileID: 115661817}
+  _spawnDistance: 1
+  _price: 20
+  _pointsForBird: 60
 --- !u!1 &602606959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,10 +3946,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 364362943}
   - {fileID: 479768666}
   - {fileID: 1245019839}
   - {fileID: 242633363}
+  - {fileID: 116354850}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622724978
@@ -7060,6 +6929,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 609884320}
     m_Modifications:
     - target: {fileID: 527663108599079194, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 527663108599079194, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 527663108599079194, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 527663108599079194, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17514932
       objectReference: {fileID: 0}
@@ -7099,6 +6980,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 527663108599079194, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2010344586805062307, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
       propertyPath: m_Name
       value: Book_02
@@ -7110,9 +6995,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2010344586805062307, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1245019841}
-    - targetCorrespondingSourceObject: {fileID: 2010344586805062307, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1245019850}
   m_SourcePrefab: {fileID: 100100000, guid: ff261cd7453a36c4e9061363b862ada9, type: 3}
 --- !u!4 &1245019839 stripped
 Transform:
@@ -7136,23 +7018,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2c78ad3c4d72044db90c528a728e1e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1940272271}
   _playerMoney: {fileID: 1940272273}
-  _price: 30
---- !u!114 &1245019850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245019840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9e2d8a64fddee458fc9584b6daa6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerMoney: {fileID: 1940272273}
-  _points: 50
+  _fx: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5, type: 3}
+  _player: {fileID: 115661817}
+  _spawnDistance: 1
+  _price: 40
+  _pointsForBird: 20
 --- !u!1 &1272449142
 GameObject:
   m_ObjectHideFlags: 0
@@ -8208,7 +8079,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2665847548112878872}
+      - m_Target: {fileID: 1471202840}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OnExitButtonClicked
         m_Mode: 1
@@ -9009,6 +8880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471202838}
   - component: {fileID: 1471202839}
+  - component: {fileID: 1471202840}
   m_Layer: 0
   m_Name: Store
   m_TagString: Untagged
@@ -9094,6 +8966,21 @@ MonoBehaviour:
   cellWidth: 0.032
   cellHeight: 0.032
   assetVersion: 1
+--- !u!114 &1471202840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471202837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9ed4ba831185246837da2a3ab0fec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerMoney: {fileID: 1940272273}
+  _titleMoney: {fileID: 798772942}
+  _titleBird: {fileID: 2086344559}
 --- !u!1 &1481065156
 GameObject:
   m_ObjectHideFlags: 0
@@ -10195,6 +10082,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.032, y: 0.032, z: 0.016}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1594117986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1594117987}
+  - component: {fileID: 1594117988}
+  m_Layer: 0
+  m_Name: bird target
+  m_TagString: lb_perchTarget
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1594117987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594117986}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 115661818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1594117988
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594117986}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1612149575
 GameObject:
   m_ObjectHideFlags: 0
@@ -10463,7 +10403,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2665847548112878872}
+      - m_Target: {fileID: 1471202840}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OnResumeButtonClicked
         m_Mode: 1
@@ -12194,7 +12134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5ef02aefbb5dc4bae5765046bf9c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moneyAmount: 300
+  _pointsAmount: 200
   _deadbirdcount: 0
 --- !u!135 &1940272274
 SphereCollider:
@@ -14584,7 +14524,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2665847548112878871}
-  - component: {fileID: 2665847548112878872}
   m_Layer: 0
   m_Name: MenuContent
   m_TagString: Untagged
@@ -14615,21 +14554,6 @@ Transform:
   - {fileID: 1929932194}
   m_Father: {fileID: 2665847549060701030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2665847548112878872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2665847548112878870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e9ed4ba831185246837da2a3ab0fec4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerMoney: {fileID: 1940272273}
-  _titleMoney: {fileID: 798772942}
-  _titleBird: {fileID: 2086344559}
 --- !u!4 &2665847548166227115
 Transform:
   m_ObjectHideFlags: 0
@@ -14951,7 +14875,6 @@ GameObject:
   - component: {fileID: 2665847548240725651}
   - component: {fileID: 4090187958396001850}
   - component: {fileID: 5677994848541650091}
-  - component: {fileID: 5677994848541650092}
   m_Layer: 0
   m_Name: Quit PressableButton
   m_TagString: Untagged
@@ -18036,7 +17959,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2665847548112878872}
+      - m_Target: {fileID: 1471202840}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OnExitButtonClicked
         m_Mode: 1
@@ -18560,21 +18483,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &5677994848541650092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2665847548240725650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e9ed4ba831185246837da2a3ab0fec4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerMoney: {fileID: 0}
-  _titleMoney: {fileID: 0}
-  _titleBird: {fileID: 0}
 --- !u!114 &5677994848832841843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19828,6 +19736,67 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &8841048433466303759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 609884320}
+    m_Modifications:
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384612001639968459, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761035752370915228, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: m_Name
+      value: Bird Controller (spawn)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7043383073778924570, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
+      propertyPath: currentCamera
+      value: 
+      objectReference: {fileID: 115661824}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e7d59d2ae444c041964412b4ecbdd5b, type: 3}
 --- !u!1 &8894845071476224614
 GameObject:
   m_ObjectHideFlags: 0

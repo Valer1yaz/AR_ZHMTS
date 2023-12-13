@@ -7,9 +7,10 @@ public class MenuController : MonoBehaviour
     [SerializeField] private PlayerMoney _playerMoney;
     [SerializeField] private TextMeshPro _titleMoney;
     [SerializeField] private TextMeshPro _titleBird;
+
     private void Update()
     {
-        _titleMoney.text = "Мана:" + Convert.ToString(_playerMoney.ReturnMoneyAmount());
+        _titleMoney.text = "Мана:" + Convert.ToString(_playerMoney.ReturnPointsAmount());
         _titleBird.text = "Очки:" + Convert.ToString(_playerMoney.ReturnBirdAmount());
     }
     public void OnPauseButtonClicked()

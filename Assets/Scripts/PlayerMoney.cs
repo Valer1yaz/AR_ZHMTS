@@ -5,34 +5,42 @@ using UnityEngine;
 
 public class PlayerMoney : MonoBehaviour
 {
-    [SerializeField] private int _moneyAmount;
+    [SerializeField] private int _pointsAmount;
     [SerializeField] private int _deadbirdcount;
 
-    public void ProcessBuy(int money)
+    // Зарабатывание и трата очков (маны)
+
+    public void ProcessWin(int points)
     {
-        if (_moneyAmount - money < 1)
-        {
-            return;
-        }
-        _moneyAmount -= money;
+        _pointsAmount += points;
     }
-    public bool CanBuy(int money)
+
+    public void ProcessBuy(int points)
     {
-        if (_moneyAmount - money >= 0)
+        _pointsAmount -= points;
+    }
+
+    public bool CanBuy(int points)
+    {
+        if (_pointsAmount - points >= 0)
         {
             return true;
         }
         else { return false; }
     }
+
+    public int ReturnPointsAmount()
+    {
+        return _pointsAmount;
+    }
+
+    // Подсчёт убитых птиц
+
     public void DeadBirdCount()
     {
         _deadbirdcount ++;
     }
 
-    public int ReturnMoneyAmount()
-    {
-        return _moneyAmount;
-    }
 
     public int ReturnBirdAmount()
     {

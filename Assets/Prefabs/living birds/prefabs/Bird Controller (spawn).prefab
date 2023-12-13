@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
+--- !u!1 &5761035752370915228
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 400000}
-  - component: {fileID: 11400000}
+  - component: {fileID: 2384612001639968459}
+  - component: {fileID: 7043383073778924570}
   m_Layer: 0
-  m_Name: _livingBirdsController
+  m_Name: Bird Controller (spawn)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400000
+--- !u!4 &2384612001639968459
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 5761035752370915228}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &11400000
+--- !u!114 &7043383073778924570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 5761035752370915228}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35acec13e92dc0846a893a2496fea9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idealNumberOfBirds: 20
-  maximumNumberOfBirds: 40
+  idealNumberOfBirds: 14
+  maximumNumberOfBirds: 30
   currentCamera: {fileID: 0}
   unspawnDistance: 10
   highQuality: 1
   collideWithObjects: 1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483648
   birdScale: 1
   robin: 1
   blueJay: 1
@@ -61,3 +61,11 @@ MonoBehaviour:
   sparrow: 1
   goldFinch: 1
   crow: 1
+  myBirds:
+  - {fileID: 6319132789573161230, guid: 050aa7e4af1cd784484f262f503c3098, type: 3}
+  - {fileID: 3402108623492929914, guid: 0e33cd26a0e387c4b97ad4718a000d1e, type: 3}
+  - {fileID: 1232857435499187557, guid: fd0e128246682b8489237811a7775cc1, type: 3}
+  - {fileID: 4784529820341862913, guid: bbc0f795f8e1853448554cbfc3429c3e, type: 3}
+  - {fileID: 7652382484709597951, guid: 3843eb214ff899149b9156804556ef3d, type: 3}
+  - {fileID: 2463040928885710279, guid: 914aaed1518ad3d4d86d0d56ca01e031, type: 3}
+  - {fileID: 4438623415694640586, guid: b2ad30f5c679b8b479d7c6f31181e704, type: 3}
