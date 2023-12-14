@@ -785,11 +785,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Template3D
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: 
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: ZHMTSdev
+  metroCertificateIssuer: ZHMTSdev
+  metroCertificateNotAfter: 00b471ca854ddb01
   metroApplicationDescription: AR-game from Valerie ZHMTS MIREA University
   wsaImages: {}
   metroTileShortName: AR_ZHMTS
