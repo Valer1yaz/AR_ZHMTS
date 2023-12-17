@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class MenuController : MonoBehaviour
     public void OnResumeButtonClicked()
     {
         // Снимаем с паузы
-        Time.timeScale = 0;
+        Time.timeScale = 1;
     }
 
     // Вызывается при нажатии на кнопку "Выход"
@@ -30,5 +31,11 @@ public class MenuController : MonoBehaviour
     {
         // Закрываем приложение
         Application.Quit();
+    }
+
+    public void OnRestartButtonClicked()
+    {
+        // Перезагружаем сцену заново
+        SceneManager.LoadScene(0);
     }
 }

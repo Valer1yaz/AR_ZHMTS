@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class lb_BirdController : MonoBehaviour {
-	public int idealNumberOfBirds;
+
+    public int idealNumberOfBirds;
 	public int maximumNumberOfBirds;
 	public Camera currentCamera;
 	public float unspawnDistance = 10.0f;
@@ -81,7 +82,7 @@ public class lb_BirdController : MonoBehaviour {
 			currentCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 		}
 
-		if(idealNumberOfBirds >= maximumNumberOfBirds){
+        if (idealNumberOfBirds >= maximumNumberOfBirds){
 			idealNumberOfBirds = maximumNumberOfBirds-1;
 		}
 		//set up the bird types to use
