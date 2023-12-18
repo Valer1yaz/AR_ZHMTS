@@ -7,11 +7,11 @@ public class lb_BirdController : MonoBehaviour {
     public int idealNumberOfBirds;
 	public int maximumNumberOfBirds;
 	public Camera currentCamera;
-	public float unspawnDistance = 10.0f;
+	public float unspawnDistance = 7.0f;
 	public bool highQuality = true;
 	public bool collideWithObjects = true;
 	public LayerMask groundLayer;
-	public float birdScale = 1.0f;
+	public float birdScale = 1.5f;
 
 	public bool robin = true;
 	public bool blueJay = true;
@@ -22,15 +22,21 @@ public class lb_BirdController : MonoBehaviour {
 	public bool crow = true;
 
 	bool pause = false;
-	[SerializeField] public GameObject[] myBirds;
+	GameObject[] myBirds;
 	List<string> myBirdTypes = new List<string>();
 	List<GameObject>  birdGroundTargets = new List<GameObject>();
 	List<GameObject> birdPerchTargets = new List<GameObject>();
 	int activeBirds = 0;
 	int birdIndex = 0;
-	GameObject[] featherEmitters = new GameObject[3];
+    GameObject[] featherEmitters = new GameObject[3];
 
-	public void AllFlee(){
+    public PlayerMoney _playerMoney;
+    public void BirdCount()
+    {
+        _playerMoney.DeadBirdCount();
+    }
+
+    public void AllFlee(){
 		if(!pause){
 			for(int i=0;i<myBirds.Length;i++){
 				if(myBirds[i].activeSelf){
@@ -145,7 +151,8 @@ public class lb_BirdController : MonoBehaviour {
 			featherEmitters[i].transform.parent = transform;
 			featherEmitters[i].SetActive (false);
 		}
-	}
+
+    }
 
 	void OnEnable(){
 		InvokeRepeating("UpdateBirds",1,1);
@@ -336,8 +343,9 @@ public class lb_BirdController : MonoBehaviour {
 			}
 		}
 	}
+    
 
-	IEnumerator DeactivateFeathers(GameObject featherEmit){
+    IEnumerator DeactivateFeathers(GameObject featherEmit){
 		yield return new WaitForSeconds(4.5f);
 		featherEmit.SetActive (false);
 	}

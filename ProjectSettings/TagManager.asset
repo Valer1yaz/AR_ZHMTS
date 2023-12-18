@@ -8,10 +8,11 @@ TagManager:
   - lb_groundTarget
   - lb_perchTarget
   - lb_bird
-  - Book
   - Floor
-  - Rabbit
-  - Butterfly
+  - Gun
+  - Revolver
+  - NoGun
+  - Bullet
   layers:
   - Default
   - TransparentFX

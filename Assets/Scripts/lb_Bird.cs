@@ -36,7 +36,7 @@ public class lb_Bird : MonoBehaviour {
 	SphereCollider solidCollider;
 	float distanceToTarget = 0.0f;
 	float agitationLevel = .5f;
-	float originalAnimSpeed = 1.0f;
+	float originalAnimSpeed = 0.7f;
 	Vector3 originalVelocity = Vector3.zero;
 
 	//hash variables for the animation states and animation properties
@@ -429,7 +429,7 @@ public class lb_Bird : MonoBehaviour {
 		if (col.tag == "lb_bird"){
 			FlyAway ();
 		}
-        if (col.tag == "Book")
+        if (col.tag == "Bullet")
         {
             Debug.Log("dead");
 			KillBird();
@@ -481,6 +481,7 @@ public class lb_Bird : MonoBehaviour {
 	}
 
 
+
     public void KillBird(){
 		if(!dead){
 			controller.SendMessage ("FeatherEmit",transform.position);
@@ -499,10 +500,12 @@ public class lb_Bird : MonoBehaviour {
 			birdCollider.size = new Vector3(0.1f,0.01f,0.1f)*controller.birdScale;
 			GetComponent<Rigidbody>().isKinematic = false;
 			GetComponent<Rigidbody>().useGravity = true;
+
+			controller.BirdCount();
 		}
     }
 
-	public void KillBirdWithForce(Vector3 force){
+    public void KillBirdWithForce(Vector3 force){
 		if(!dead){
 			controller.SendMessage ("FeatherEmit",transform.position);
 			anim.SetTrigger(dieTriggerHash);
@@ -521,6 +524,8 @@ public class lb_Bird : MonoBehaviour {
 			GetComponent<Rigidbody>().isKinematic = false;
 			GetComponent<Rigidbody>().useGravity = true;
 			GetComponent<Rigidbody>().AddForce (force);
+
+            controller.BirdCount();
         }
 	}
 
