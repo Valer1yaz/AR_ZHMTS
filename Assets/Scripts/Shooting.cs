@@ -20,6 +20,9 @@ public class Shooting : MonoBehaviour, IMixedRealityHandJointHandler // handle j
         [SerializeField] internal GameObject shootFromHere;
     }
 
+    [SerializeField] public GameObject bulletPrefab;
+    [SerializeField] public AudioClip gunSound;
+
     enum TriggerConfiguration
     {
         Pointer,
@@ -51,8 +54,7 @@ public class Shooting : MonoBehaviour, IMixedRealityHandJointHandler // handle j
     [SerializeField] public HandObject leftHand;
     [SerializeField] public HandObject rightHand;
 
-    [SerializeField] public GameObject bulletPrefab;
-    [SerializeField] public AudioClip gunSound;
+
 
     private TriggerConfiguration triggerConfiguration = TriggerConfiguration.Pointer;
     private AudioSource audioSource;

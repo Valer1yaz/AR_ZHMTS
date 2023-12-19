@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockCursorWhenFocusLocked: 1
-  setCursorInvisibleWhenFocusLocked: 0
+  setCursorInvisibleWhenFocusLocked: 1
   maxGazeCollisionDistance: 10
   raycastLayerMasks:
   - serializedVersion: 2
@@ -4902,6 +4902,9 @@ GameObject:
   - component: {fileID: 479768665}
   - component: {fileID: 479768664}
   - component: {fileID: 479768663}
+  - component: {fileID: 479768669}
+  - component: {fileID: 479768668}
+  - component: {fileID: 479768667}
   m_Layer: 0
   m_Name: Floor
   m_TagString: lb_groundTarget
@@ -4989,11 +4992,81 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 30, y: 0.1, z: 30}
+  m_LocalScale: {x: 10, y: 0.1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 609884320}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479768667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479768662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1fea68463e4e84b86c395b654f950d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualizationObject: {fileID: 0}
+  interactableObject: {fileID: 0}
+  buttonBehavior: 0
+  autoFollowAtDistance: 0
+  autoFollowDistance: 2
+  autoFollowTransformTarget: {fileID: 0}
+  autoFollowTriggered:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &479768668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479768662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4684083f6dff4a1d8a790bccc354fcf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateLinkedTransform: 0
+  moveLerpTime: 0.1
+  rotateLerpTime: 0.1
+  scaleLerpTime: 0
+  maintainScaleOnInitialization: 1
+  smoothing: 1
+  lifetime: 0
+  referenceDirection: 1
+  minDistance: 2
+  maxDistance: 5
+  minViewDegrees: 2
+  maxViewDegrees: 30
+  aspectV: 1
+  ignoreAngleClamp: 0
+  ignoreDistanceClamp: 0
+  useFixedVerticalPosition: 1
+  fixedVerticalPosition: 0
+  orientToReferenceDirection: 0
+--- !u!114 &479768669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479768662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55691ad5b034fe6966763a6e23818d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedTargetType: 0
+  trackedHandedness: 3
+  trackedHandJoint: 2
+  transformOverride: {fileID: 0}
+  additionalOffset: {x: 0, y: -1.5, z: 0}
+  additionalRotation: {x: 0, y: 0, z: 0}
+  updateSolvers: 1
 --- !u!1 &480128904
 GameObject:
   m_ObjectHideFlags: 0
@@ -8759,8 +8832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35acec13e92dc0846a893a2496fea9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idealNumberOfBirds: 20
-  maximumNumberOfBirds: 40
+  idealNumberOfBirds: 50
+  maximumNumberOfBirds: 120
   currentCamera: {fileID: 0}
   unspawnDistance: 10
   highQuality: 1
@@ -9287,7 +9360,7 @@ GameObject:
   - component: {fileID: 1343292401}
   - component: {fileID: 1343292400}
   m_Layer: 0
-  m_Name: Quit PressableButton (2)
+  m_Name: Quit PressableButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9490,6 +9563,54 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1234655577}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1929932193}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9031548362961135010}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2665847549233646951}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 1471202840}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OnExitButtonClicked
@@ -9500,7 +9621,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   Events:
   - Event:
@@ -15449,6 +15570,18 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1289668798}
+        m_TargetAssemblyTypeName: lb_BirdController, Assembly-CSharp
+        m_MethodName: AllUnPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1471202840}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: OnRestartButtonClicked
@@ -15460,6 +15593,54 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1234655577}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1929932193}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9031548362961135010}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2665847549233646951}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   Events:
   - Event:
@@ -19284,8 +19465,8 @@ MonoBehaviour:
   trackedHandedness: 2
   trackedHandJoint: 1
   transformOverride: {fileID: 0}
-  additionalOffset: {x: -0.06, y: -0.02, z: 0.25}
-  additionalRotation: {x: -3, y: 180, z: -70}
+  additionalOffset: {x: -0.05, y: -0.04, z: 0.21}
+  additionalRotation: {x: -9.8, y: 180, z: -60}
   updateSolvers: 1
 --- !u!114 &3960985997567606169
 MonoBehaviour:
@@ -19299,14 +19480,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e2c352c46f1a146a1571bea3edb549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7444456352731301780, guid: 73b0ddddd00fee647aa2946228f02b48, type: 3}
+  gunSound: {fileID: 8300000, guid: ccb8c34bde4eb41389aa1c83a3ab0e30, type: 3}
   leftHand:
     gun: {fileID: 3960985997567606166}
     shootFromHere: {fileID: 1519599865}
   rightHand:
     gun: {fileID: 3960985997567606166}
     shootFromHere: {fileID: 1519599865}
-  bulletPrefab: {fileID: 7444456352731301780, guid: 73b0ddddd00fee647aa2946228f02b48, type: 3}
-  gunSound: {fileID: 8300000, guid: ccb8c34bde4eb41389aa1c83a3ab0e30, type: 3}
 --- !u!1 &3961056094806357512
 GameObject:
   m_ObjectHideFlags: 0
@@ -21039,8 +21220,8 @@ MonoBehaviour:
   trackedHandedness: 2
   trackedHandJoint: 1
   transformOverride: {fileID: 0}
-  additionalOffset: {x: -0.05, y: -0.03, z: 0.27}
-  additionalRotation: {x: -3, y: 180, z: -70}
+  additionalOffset: {x: -0.03, y: -0.04, z: 0.27}
+  additionalRotation: {x: -6, y: 180, z: -70}
   updateSolvers: 1
 --- !u!114 &5038271006535692110
 MonoBehaviour:
@@ -21054,14 +21235,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e2c352c46f1a146a1571bea3edb549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7444456352731301780, guid: 73b0ddddd00fee647aa2946228f02b48, type: 3}
+  gunSound: {fileID: 8300000, guid: ccb8c34bde4eb41389aa1c83a3ab0e30, type: 3}
   leftHand:
     gun: {fileID: 5036755721133983322}
     shootFromHere: {fileID: 1565435390}
   rightHand:
     gun: {fileID: 5036755721133983322}
     shootFromHere: {fileID: 1565435390}
-  bulletPrefab: {fileID: 7444456352731301780, guid: 73b0ddddd00fee647aa2946228f02b48, type: 3}
-  gunSound: {fileID: 8300000, guid: ccb8c34bde4eb41389aa1c83a3ab0e30, type: 3}
 --- !u!4 &5040800345320781606
 Transform:
   m_ObjectHideFlags: 0
@@ -22523,8 +22704,8 @@ MonoBehaviour:
   trackedHandedness: 2
   trackedHandJoint: 1
   transformOverride: {fileID: 0}
-  additionalOffset: {x: 0, y: -0.09, z: 0.25}
-  additionalRotation: {x: -23, y: 223, z: 90}
+  additionalOffset: {x: -0.06, y: -0.08, z: 0.25}
+  additionalRotation: {x: -18.3, y: 200, z: 91.8}
   updateSolvers: 1
 --- !u!114 &7788596741837099741
 MonoBehaviour:
@@ -22538,14 +22719,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86e2c352c46f1a146a1571bea3edb549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5197770554463935787, guid: e0c281a61854c994aa22c39dadaa2398, type: 3}
+  gunSound: {fileID: 8300000, guid: ccb8c34bde4eb41389aa1c83a3ab0e30, type: 3}
   leftHand:
     gun: {fileID: 7788596741833805530}
     shootFromHere: {fileID: 1436667711}
   rightHand:
     gun: {fileID: 7788596741833805530}
     shootFromHere: {fileID: 1436667711}
-  bulletPrefab: {fileID: 5197770554463935787, guid: e0c281a61854c994aa22c39dadaa2398, type: 3}
-  gunSound: {fileID: 8300000, guid: ccb8c34bde4eb41389aa1c83a3ab0e30, type: 3}
 --- !u!222 &7851765475904623378
 CanvasRenderer:
   m_ObjectHideFlags: 0

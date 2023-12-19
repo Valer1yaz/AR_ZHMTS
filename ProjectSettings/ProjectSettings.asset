@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: ZHMTSdev
-  productName: NUAR
+  productName: Zhmts_NUAR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -137,10 +137,7 @@ PlayerSettings:
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 8199515496293749413, guid: 576cf078731d2db4bb11d7c2589ef422, type: 2}
-  - {fileID: 11400000, guid: d16e3dfe7ebbba84fb53752173b9b6e1, type: 2}
-  - {fileID: 5587190696326970083, guid: 5bc62b7338b08ad40b2efdc3a27f9126, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

@@ -1599,8 +1599,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8253449416961999169}
   - {fileID: 7238881791106281676}
@@ -1644,8 +1644,7 @@ MonoBehaviour:
   flyAway1: {fileID: 8300000, guid: 9dabaef0cd2ecb241956e3db52d3bc8d, type: 3}
   flyAway2: {fileID: 8300000, guid: ae13220b2fee67344b8b455414c59ff4, type: 3}
   fleeCrows: 1
-  _playerMoney: {fileID: 0}
-  _update: {fileID: 0}
+  dead: 0
 --- !u!65 &7631848999830262487
 BoxCollider:
   m_ObjectHideFlags: 0
