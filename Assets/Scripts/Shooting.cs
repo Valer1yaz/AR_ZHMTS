@@ -61,8 +61,8 @@ public class Shooting : MonoBehaviour, IMixedRealityHandJointHandler // handle j
 
     void Start()
     {
-        rightHand.shootFromHere = rightHand.gun.transform.Find("Cylinder").gameObject.transform.Find("ShootFromHere").gameObject;
-        leftHand.shootFromHere = leftHand.gun.transform.Find("Cylinder").gameObject.transform.Find("ShootFromHere").gameObject;
+        rightHand.shootFromHere = rightHand.gun.transform.Find("ShootFromHere").gameObject;
+        leftHand.shootFromHere = leftHand.gun.transform.Find("ShootFromHere").gameObject;
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -148,10 +148,6 @@ public class Shooting : MonoBehaviour, IMixedRealityHandJointHandler // handle j
     private void Shoot(Vector3 origin, Quaternion rotation, Color? color = null)
     {
         GameObject bullet = Instantiate(bulletPrefab, origin, rotation);
-        if (color != null)
-        {
-            bullet.gameObject.GetComponent<Renderer>().material.SetColor("_Color", color.Value);
-        }
         audioSource.PlayOneShot(gunSound);
     }
 }
